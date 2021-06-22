@@ -19,21 +19,27 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(png|jpg)$/,
-                loader: 'url-loader'
-            },
-            {
-                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                test: /\.(png|jpg|svg|ttf|eot|woff|woff2|gif)$/,
                 use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: '[name].[ext]',
-                            outputPath: 'fonts/'
-                        }
-                    }
-                ]
+                    'file-loader?name=[hash:12].[ext]&outputPath=images/',
+                    'image-webpack-loader',
+                ],
             }
+            // {
+            //     test: /\.(png|jpg)$/,
+            //     loader: 'url-loader'
+            // },
+            // {
+            //     test: /\.svg$/i,
+            //     use: [
+            //         {
+            //             loader: 'url-loader',
+            //             options: {
+            //                 encoding: false,
+            //             }
+            //         }
+            //     ]
+            // }
         ]
     },
     plugins: [
