@@ -465,3 +465,27 @@ body {
     font-size: 14px;
     color: #707070; }
 
+.decor {
+  padding: 170px 0 155px;
+  background-image: url(images/49efc5b23f7b.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .decor__title {
+    max-width: 730px;
+    color: #363838;
+    font-size: 60px;
+    line-height: 80px;
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+    position: relative; }
+    .decor__title::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 200px;
+      height: 1px;
+      bottom: 0;
+      background: #6D7278; }
+  .decor__text {
+    max-width: 540px; }
+
