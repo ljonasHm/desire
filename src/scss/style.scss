@@ -35,6 +35,20 @@
     &__list-link {
         @extend %title-font;
         color: rgba(54, 56, 56, 0.9033);
+        &--active {
+            padding-bottom: 4px;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 2px;
+                border-radius: 1px;
+                background-color: rgba($title, .7);
+            }
+        }
     }
 }
 
@@ -224,6 +238,25 @@
     }
     &__images {
         max-width: 485px;
+    }
+}
+
+.breadcrumbs {
+    background: rgba(#DFDFDF, .5);
+    padding: 13px 14px;
+    &__list {
+        display: flex;
+    }
+    &__item::after {
+        content: '/';
+        margin: 0 4px 0 -4px;
+    }
+    &__item:last-child::after {
+        display: none;
+    }
+    &__link {
+        font-size: 14px;
+        color: $default;
     }
 }
 
