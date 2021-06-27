@@ -1,4 +1,8 @@
 import './scss/style.scss';
+import $ from 'jquery';
+import mixitup from 'mixitup';
+import 'slick-carousel';
+import { Fancybox } from "@fancyapps/ui";
 
 function rightsideMenu() {
     const menu = document.querySelector('.rightside-menu');
@@ -23,11 +27,13 @@ function topSlider() {
 }
 
 function gallery() {
-    var mixer = mixitup('.gallery__inner', {
-        load: {
-            filter: '.living'
-        }
-    });
+    if (document.querySelector('.gallery__inner')) {
+        var mixer = mixitup('.gallery__inner', {
+            load: {
+                filter: '.living'
+            }
+        });
+    }
 }
 
 rightsideMenu();
