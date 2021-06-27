@@ -546,3 +546,34 @@ body {
   .works-path__item-text {
     margin-top: 13px; }
 
+.gallery {
+  padding: 80px 0 90px; }
+  .gallery__buttons {
+    text-align: center;
+    margin-bottom: 40px; }
+  .gallery__btn {
+    margin: 0 13px;
+    background-color: transparent;
+    border: 1px solid #454647;
+    border-radius: 20px;
+    padding: 6px 16px;
+    color: #8F8D8D;
+    cursor: pointer; }
+  .gallery .mixitup-control-active {
+    background-color: #FFEF35;
+    color: #363838;
+    border-color: #FFEF35; }
+  .gallery__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px 35px; }
+  .gallery__item:first-child {
+    grid-column: span 2;
+    grid-row: span 2; }
+  .gallery__item-img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 1150px;
+    height: 100%; }
+

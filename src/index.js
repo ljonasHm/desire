@@ -22,5 +22,14 @@ function topSlider() {
     });
 }
 
+function gallery() {
+    var mixer = mixitup('.gallery__inner', {
+        load: {
+            filter: '.living'
+        }
+    });
+}
+
 rightsideMenu();
 topSlider();
+gallery();
