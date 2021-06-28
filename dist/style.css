@@ -423,7 +423,7 @@ body {
 
 .new-collection {
   text-align: center;
-  padding: 45px 0 105px; }
+  padding: 45px 0 35px; }
   .new-collection__title {
     color: #363838;
     font-size: 36px;
@@ -448,7 +448,8 @@ body {
 .collection {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 30px; }
+  grid-gap: 30px;
+  padding-bottom: 70px; }
   .collection__item {
     position: relative; }
     .collection__item:hover .collection__info {
@@ -732,4 +733,12 @@ body {
     height: 2px;
     background-color: #363838;
     margin-top: -2px; }
+
+.partners {
+  padding: 16px 0 60px; }
+  .partners__items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); }
+  .partners__item {
+    margin: 0 auto; }
 
