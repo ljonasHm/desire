@@ -26,6 +26,15 @@ function topSlider() {
     });
 }
 
+function contactSlider() {
+    $('.contact-slider').slick({
+        slidesToShow: 10,
+        slidesToScroll: 10,
+        dots: true,
+        arrows: false
+    });
+}
+
 function gallery() {
     if (document.querySelector('.gallery__inner')) {
         var mixer = mixitup('.gallery__inner', {
@@ -38,4 +47,5 @@ function gallery() {
 
 rightsideMenu();
 topSlider();
+contactSlider();
 gallery();

@@ -22,6 +22,13 @@ body {
     flex: 1 0 auto;
 }
 
+input {
+    &:active, &:focus {
+        outline: none;
+        outline-offset: none;
+    }
+}
+
 .footer {
     flex: 0 0 auto;
 }
@@ -58,5 +65,24 @@ body {
         button {
             background: #FFEF35;
         }
+    }
+}
+
+.info-email {
+    font-weight: 600;
+    font-size: 14px;
+    color: $title;
+    margin-bottom: 22px;
+    padding-left: 30px;
+    display: inline-block;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '';
+        background-image: url(../../images/envelope.svg);
+        left: 0;
+        top: 6px;
+        width: 16px;
+        height: 12px;
     }
 }
