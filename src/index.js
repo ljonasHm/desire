@@ -52,8 +52,20 @@ function gallery() {
     }
 }
 
+function burgerMenu() {
+    const menus = document.querySelectorAll('.menu');
+    const menuButton = document.querySelector('.header__btn-menu');
+
+    menuButton.addEventListener('click', () => {
+        menus.forEach(menu => {
+            menu.classList.toggle('menu--open');
+        })
+    });
+}
+
 rightsideMenu();
 topSlider();
 blogSlider();
 contactSlider();
 gallery();
+burgerMenu();

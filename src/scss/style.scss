@@ -10,13 +10,16 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 120px;
+         height: 120px;
     }
     &__btn {
         background-color: transparent;
         border: none;
         padding: 0;
         cursor: pointer;
+    }
+    &__btn-menu {
+        display: none;
     }
 }
 
@@ -231,10 +234,15 @@
     z-index: 2;
     &__list {
         display: flex;
+        overflow-x: auto;
+    }
+    &__item {
+        position: relative;
+        padding-right: 8px;
     }
     &__item::after {
         content: '/';
-        margin: 0 4px 0 -4px;
+        // margin: 0 4px 0 -4px;
     }
     &__item:last-child::after {
         display: none;
@@ -1214,3 +1222,5 @@
         cursor: pointer;        
     }
 }
+
+@import 'media';
