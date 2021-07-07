@@ -764,6 +764,8 @@ input:active, input:focus {
 .map {
   margin-top: -53px;
   margin-bottom: 50px; }
+  .map iframe {
+    height: 578px; }
 
 .contact {
   padding-bottom: 100px; }
@@ -1186,18 +1188,26 @@ input:active, input:focus {
   padding: 6px 60px;
   cursor: pointer; }
 
+@media (max-width: 1700px) {
+  .contact-slider__img {
+    width: 100%; } }
+
 @media (max-width: 1366px) {
   .collection {
     grid-template-columns: repeat(3, 1fr); }
     .collection__images {
-      width: 100%; } }
+      width: 100%; }
+  .map {
+    margin-top: 0; } }
 
 @media (max-width: 1200px) {
   .top__slider-title {
     font-size: 62px;
     line-height: 74px; }
   .top__slider-img {
-    height: 640px; } }
+    height: 640px; }
+  .contact-slider__img {
+    height: 240px; } }
 
 @media (max-width: 992px) {
   .footer__info {
@@ -1227,7 +1237,9 @@ input:active, input:focus {
   .works-path__item {
     width: 350px; }
     .works-path__item--production {
-      margin-left: 50px; } }
+      margin-left: 50px; }
+  .contact .contact__social, .contact__box, .contact__form {
+    padding-left: 0; } }
 
 @media (max-width: 768px) {
   .header__btn {
@@ -1264,7 +1276,9 @@ input:active, input:focus {
   .inspiration__images {
     display: none; }
   .partners__items {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .map iframe {
+    height: 300px; } }
 
 @media (max-width: 650px) {
   .top__inner {
@@ -1296,7 +1310,11 @@ input:active, input:focus {
   .blog-box__img {
     width: 100%; }
   .blog-box__item {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .contact__form-input {
+    width: 100%; }
+  .slick-dots li {
+    margin: 0 5px; } }
 
 @media (max-width: 540px) {
   .menu {
@@ -1320,6 +1338,8 @@ input:active, input:focus {
     .menu__list-link {
       display: block;
       padding: 15px 0; }
+      .menu__list-link--active::after {
+        display: none; }
   .logo {
     order: -1;
     position: relative;
@@ -1361,6 +1381,9 @@ input:active, input:focus {
   .gallery__item:first-child {
     grid-column: 1;
     grid-row: 1; }
+  .gallery.gallery-page .gallery__item:nth-child(8) {
+    grid-column: auto;
+    grid-row: auto; }
   .blog-box__item-title {
     font-size: 22px;
     line-height: 36px; }
@@ -1381,5 +1404,7 @@ input:active, input:focus {
   .footer__form-button {
     width: 100%;
     margin-left: 0;
-    margin-top: 10px; } }
+    margin-top: 10px; }
+  .contact-slider__img {
+    height: 200px; } }
 
