@@ -1408,6 +1408,26 @@ input:active, input:focus {
   .blog__item-title {
     font-size: 24px;
     line-height: 38px; }
+  .blog-one__links {
+    padding: 30px 0; }
+  .blog-one__link span {
+    display: none; }
+  .blog-one__form-input {
+    width: 100%; }
+  .blog-one__comments-title, .blog-one__comments-name, .blog-one__form-title {
+    font-size: 16px;
+    line-height: 23px; }
+  .blog-one__comments-item {
+    flex-wrap: wrap; }
+  .blog-one__comments-avatar {
+    height: 45px;
+    width: 45px; }
+  .blog-one__comments-name, .blog-one__comments-date {
+    margin-left: 55px; }
+  .blog-one__comments-info {
+    margin-top: -46px; }
+  .blog-one__reply {
+    margin-left: 0; }
   .about__prev-title {
     font-size: 40px;
     line-height: 48px; }
@@ -1429,5 +1449,7 @@ input:active, input:focus {
   .contact-slider__img {
     height: 200px; }
   .blog__blockquote {
-    padding: 30px 30px; } }
+    padding: 30px 30px; }
+  .blog-one__item blockquote {
+    padding: 0 20px; } }
 
